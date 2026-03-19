@@ -7,7 +7,7 @@ const Problems = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/problems")
+      .get("https://ai-learning-webapplication.onrender.com/api/problems")
       .then((res) => setProblems(res.data));
   }, []);
 
