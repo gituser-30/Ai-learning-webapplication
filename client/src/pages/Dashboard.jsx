@@ -1,6 +1,6 @@
 
 import { useEffect, useState, useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../Context/AuthContext";
 import axios from "axios";
 import { HiOutlineMicrophone } from "react-icons/hi";
 import ToolCard from "../components/ToolCard";
