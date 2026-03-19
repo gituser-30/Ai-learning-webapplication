@@ -19,7 +19,7 @@ const SolveProblem = () => {
   // Fetch problem
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/problems/${id}`)
+      .get(`https://ai-learning-webapplication.onrender.com/api/problems/${id}`)
       .then((res) => setProblem(res.data))
       .catch((err) => console.error(err));
   }, [id]);
@@ -31,7 +31,7 @@ const SolveProblem = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/code/run",
+        "https://ai-learning-webapplication.onrender.com/api/code/run",
         {
           language,
           code,
@@ -57,7 +57,7 @@ const SolveProblem = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/code/submit/${id}`,
+        `https://ai-learning-webapplication.onrender.com/api/code/submit/${id}`,
         { language, code },
         {
           headers: {
