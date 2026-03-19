@@ -13,7 +13,7 @@ export default function CourseRoadmap() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/course/${courseId}`, {
+      .get(`https://ai-learning-webapplication.onrender.com/api/course/${courseId}`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => {
