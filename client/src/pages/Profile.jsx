@@ -1,7 +1,7 @@
 
 import { useContext, useState, useEffect } from "react";
 import axios from "axios";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../Context/AuthContext";
 import "./profile.css";
 
 export default function Profile() {
