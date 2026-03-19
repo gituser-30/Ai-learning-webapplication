@@ -15,7 +15,7 @@ const PdfWorkspace = () => {
   const fetchPdfs = () => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/api/pdfs/my-pdfs", {
+      .get("https://ai-learning-webapplication.onrender.com/api/pdfs/my-pdfs", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((res) => {
@@ -42,7 +42,7 @@ const PdfWorkspace = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/pdfs/upload",
+        "https://ai-learning-webapplication.onrender.com/api/pdfs/upload",
         formData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -59,7 +59,7 @@ const PdfWorkspace = () => {
   const extractText = (id) => {
     axios
       .post(
-        `http://localhost:5000/api/pdfs/${id}/extract`,
+        `https://ai-learning-webapplication.onrender.com/api/pdfs/${id}/extract`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       )
