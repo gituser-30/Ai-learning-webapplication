@@ -12,7 +12,7 @@ import PdfViewer from "./pages/PdfViewer";
 import PdfChat from "./pages/PdfChat";
 import PdfWorkspace from "./pages/PdfWorkspace";
 import AiTutor from "./pages/AiTutor";
-import { AuthContext } from "./context/AuthContext";
+import { AuthContext } from "./Context/AuthContext";
 import { useContext } from "react";
 import Domains from "./pages/Domains";
 import DomainProblems from "./pages/DomainProblems";
