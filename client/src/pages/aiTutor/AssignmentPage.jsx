@@ -17,7 +17,7 @@ export default function AssignmentPage() {
   // load assignment
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/assignment/${assignmentId}`, {
+      .get(`https://ai-learning-webapplication.onrender.com/api/assignment/${assignmentId}`, {
         headers: { Authorization: `Bearer ${token}` }
       })
       .then(res => setAssignment(res.data))
@@ -32,7 +32,7 @@ export default function AssignmentPage() {
 
     try {
       const res = await axios.post(
-        `http://localhost:5000/api/assignment/submit/${assignmentId}`,
+        `https://ai-learning-webapplication.onrender.com/api/assignment/submit/${assignmentId}`,
         { answer },
         { headers: { Authorization: `Bearer ${token}` } }
       );
