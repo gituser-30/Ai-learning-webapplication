@@ -9,7 +9,7 @@ const MyPdfs = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/pdfs/my-pdfs", {
+      .get("https://ai-learning-webapplication.onrender.com/api/pdfs/my-pdfs", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
