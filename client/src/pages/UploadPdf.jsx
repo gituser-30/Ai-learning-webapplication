@@ -16,7 +16,7 @@ const UploadPdf = () => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/pdfs/upload",
+        "https://ai-learning-webapplication.onrender.com/api/pdfs/upload",
         formData,
         {
           headers: {
