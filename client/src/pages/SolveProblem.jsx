@@ -3,7 +3,7 @@ import { useEffect, useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Editor from "@monaco-editor/react";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../Context/AuthContext";
 
 const SolveProblem = () => {
   const { id } = useParams();
