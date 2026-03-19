@@ -6,7 +6,7 @@ const Domains = () => {
   const [domains, setDomains] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/domains")
+    axios.get("https://ai-learning-webapplication.onrender.com/api/domains")
       .then(res => setDomains(res.data));
   }, []);
 
