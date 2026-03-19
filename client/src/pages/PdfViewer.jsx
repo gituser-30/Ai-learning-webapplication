@@ -10,7 +10,7 @@ const PdfViewer = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/pdfs/${id}`, {
+      .get(`https://ai-learning-webapplication.onrender.com/api/pdfs/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
