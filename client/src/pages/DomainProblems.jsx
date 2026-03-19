@@ -8,7 +8,7 @@ const DomainProblems = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/problems/domain/${id}`)
+      .get(`https://ai-learning-webapplication.onrender.com/api/problems/domain/${id}`)
       .then(res => setProblems(res.data));
   }, [id]);
 
