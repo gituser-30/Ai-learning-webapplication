@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import axios from "axios";
-import { AuthContext } from "../context/AuthContext";
+import { AuthContext } from "../Context/AuthContext";
 
 const UploadPdf = () => {
   const { token } = useContext(AuthContext);
