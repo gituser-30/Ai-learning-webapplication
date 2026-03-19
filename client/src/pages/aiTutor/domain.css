@@ -1,0 +1,133 @@
+/* .domain-page {
+  padding: 40px;
+  text-align: center;
+}
+
+.domain-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+.domain-card {
+  padding: 30px;
+  border: 3px solid;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.25s;
+  background: #111;
+  color: white;
+}
+
+.domain-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+} */
+
+.domain-page {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(135deg, #020203, #000000, #000000);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff9800, #4caf50, #2196f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.domain-card {
+  padding: 35px;
+  border: 3px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.domain-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.custom-domain {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+.custom-domain input {
+  flex: 1;
+  max-width: 300px;
+  padding: 0.6rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.custom-domain input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+.custom-domain button {
+  padding: 0.6rem 1.2rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.custom-domain button:hover {
+  background: #45a049;
+}

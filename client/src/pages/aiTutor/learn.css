@@ -1,0 +1,154 @@
+/* .learn-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  color: white;
+}
+
+.lesson-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lesson-content {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.lesson-content h3 {
+  margin-top: 30px;
+  color: #4fc3f7;
+}
+
+.lesson-content code {
+  background: #000;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.lesson-actions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.lesson-actions button {
+  background: #4CAF50;
+  border: none;
+  padding: 14px 26px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+} */
+
+
+.learn-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+}
+
+.lesson-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff9800, #4caf50, #2196f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lesson-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 35px;
+  border-radius: 18px;
+  line-height: 1.8;
+  font-size: 17px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.lesson-content h3 {
+  margin-top: 30px;
+  color: #4fc3f7;
+  font-size: 1.4rem;
+}
+
+.lesson-content code {
+  background: #000;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #ffeb3b;
+  font-family: "Fira Code", monospace;
+}
+
+.lesson-actions {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.lesson-actions button {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  border: none;
+  padding: 16px 30px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.lesson-actions button:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: linear-gradient(135deg, #43a047, #66bb6a);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.learn-loading {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 80px;
+  color: #ddd;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.upgrade-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.upgrade-container button {
+  background: linear-gradient(135deg,#ff9800,#ff5722);
+  border: none;
+  padding: 14px 26px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}

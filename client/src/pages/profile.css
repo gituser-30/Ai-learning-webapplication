@@ -1,0 +1,229 @@
+/* profile.css
+.dashboard-wrapper{
+  min-height:100vh;
+  background:linear-gradient(135deg,#0f172a,#020617);
+  color:#e5e7eb;
+  padding:40px;
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:30px;
+  animation:fadeIn .6s ease;
+}
+
+.card-glow{
+  background:#020617cc;
+  backdrop-filter:blur(12px);
+  border-radius:20px;
+  padding:25px;
+  box-shadow:0 0 30px rgba(56,189,248,.15);
+  transition:.3s;
+}
+.card-glow:hover{transform:translateY(-5px);box-shadow:0 0 45px rgba(56,189,248,.25)}
+
+.title{margin-bottom:15px;font-weight:600}
+
+.profile-form{display:flex;flex-direction:column;gap:12px}
+.profile-form input{
+  background:#020617;
+  border:1px solid #1f2937;
+  padding:10px;border-radius:10px;color:white
+}
+.profile-form button{
+  background:linear-gradient(135deg,#38bdf8,#6366f1);
+  border:none;padding:10px;border-radius:10px;color:white;font-weight:600;cursor:pointer;transition:.3s
+}
+.profile-form button:hover{opacity:.85}
+
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:20px}
+.stat{background:#020617;border-radius:14px;padding:18px;text-align:center;transition:.25s}
+.stat:hover{transform:scale(1.05);background:#0b1220}
+.stat span{font-size:28px}
+.stat p{font-size:22px;font-weight:700;margin:4px 0}
+.stat small{opacity:.6}
+
+.course-card{background:#020617;border-radius:14px;padding:15px;margin-top:15px;transition:.25s}
+.course-card:hover{transform:translateX(5px)}
+.course-header{display:flex;justify-content:space-between;margin-bottom:8px}
+.progress-bar-wrap{height:8px;background:#1f2937;border-radius:20px;overflow:hidden}
+.progress-bar-fill{height:100%;background:linear-gradient(90deg,#22c55e,#38bdf8);transition:width .5s}
+
+@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}} */
+
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  animation: fadeIn .6s ease;
+}
+
+/* Cards */
+.card-glow {
+  background: #020617cc;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 30px rgba(56, 189, 248, .15);
+  transition: .3s;
+}
+.card-glow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 45px rgba(56, 189, 248, .25);
+}
+
+.title {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Profile form */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile-form input {
+  background: #020617;
+  border: 1px solid #1f2937;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.profile-form button {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+.profile-form button:hover {
+  opacity: .85;
+}
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.stat {
+  background: #020617;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  transition: .25s;
+}
+.stat:hover {
+  transform: scale(1.05);
+  background: #0b1220;
+}
+.stat span {
+  font-size: 28px;
+}
+.stat p {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+.stat small {
+  opacity: .6;
+}
+
+/* Courses */
+.course-card {
+  background: #020617;
+  border-radius: 14px;
+  padding: 15px;
+  margin-top: 15px;
+  transition: .25s;
+}
+.course-card:hover {
+  transform: translateX(5px);
+}
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.progress-bar-wrap {
+  height: 8px;
+  background: #1f2937;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+  transition: width .5s;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+  .dashboard-wrapper {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-wrapper {
+    padding: 15px;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .stat p {
+    font-size: 18px;
+  }
+  .stat span {
+    font-size: 24px;
+  }
+  .profile-form input,
+  .profile-form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+
+
+/*  */
+/* skeleton loading */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  animation: shimmer 1.3s infinite;
+}
+
+.large { height: 80px; margin-top: 15px; }
+
+@keyframes shimmer {
+  100% { left: 100%; }
+}
