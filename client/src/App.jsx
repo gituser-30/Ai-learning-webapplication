@@ -6,7 +6,7 @@ import Profile from "./pages/Profile";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./components/Navbar";
-import UploadPdf from "./pages/Uploadpdf";
+import UploadPdf from "./pages/UploadPdf";
 import MyPdfs from "./pages/MyPdfs";
 import PdfViewer from "./pages/PdfViewer";
 import PdfChat from "./pages/PdfChat";
