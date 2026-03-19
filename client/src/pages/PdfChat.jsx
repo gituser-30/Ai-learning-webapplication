@@ -21,7 +21,7 @@ const PdfChat = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/ai/chat",
+        "https://ai-learning-webapplication.onrender.com/api/ai/chat",
         {
           pdfId: id,
           question,
